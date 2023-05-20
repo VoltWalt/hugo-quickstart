@@ -7,13 +7,9 @@
 {{ define "center_main" }}
 <main class="center_main">
 
-    {{ $paginator := .Paginate .Pages }}
-    {{ range $paginator.Pages }}
-    {{ partial "item/blog" . }}
+    {{ range .Pages.ByDate }}
+    {{ partial "item/note" . }}
     {{ end }}
 
-    {{- partial "pagination.html" . -}}
-
-    
 </main>
 {{ end }}

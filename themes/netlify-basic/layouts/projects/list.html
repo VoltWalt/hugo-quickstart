@@ -6,14 +6,10 @@
 
 {{ define "center_main" }}
 <main class="center_main">
-
-    {{ $paginator := .Paginate .Pages }}
-    {{ range $paginator.Pages }}
-    {{ partial "item/blog" . }}
-    {{ end }}
-
-    {{- partial "pagination.html" . -}}
-
-    
+    <div style="display: grid;grid-template-columns: 1fr 1fr;grid-column-gap: 1em">
+        {{ range .Pages.ByDate }}
+        {{ partial "item/projects" . }}
+        {{ end }}
+    </div>
 </main>
 {{ end }}
