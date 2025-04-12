@@ -9,8 +9,8 @@ theme: # "hugo-theme-onelou"
 params:
   opengraph:
     github: 'https://github.com/VoltWalt'
-    twitter: 'https://twitter.com/Moeay0',
-    bluesky: 'https://bsky.app/profile/voltwalt.dev',
+    twitter: 'https://twitter.com/Moeay0'
+    bluesky: 'https://bsky.app/profile/voltwalt.dev'
   footer:
     hidePowered: false # Powered by Hugo & theme OneLou
     beian: # ICP备案号
