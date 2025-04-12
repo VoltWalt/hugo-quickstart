@@ -72,4 +72,11 @@
         </svg>
     </a>
     {{ end }}
+    {{ if .Site.Params.social.bluesky }}
+    <a href="https://bsky.app/profile/{{ . }}" target="_blank" rel="noopener" title="Bluesky">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L2 19.6h20L12 2z"/>
+      </svg>
+    </a>
+{{ end }}
 </div>
